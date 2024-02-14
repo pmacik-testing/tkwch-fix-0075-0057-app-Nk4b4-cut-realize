@@ -1,0 +1,18 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: devfile-sample-lype
+spec:
+  replicas: 1
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/pmacik-testing/tkwch-fix-0075-0057-tenant/tkwch-fix-0075-0057-app/devfile-sample-lype@sha256:cf69d9088c1b9b51c8698d8ef6741fcc850f3f6c7131cf9c17d3476d2f17c723
+        name: my-nodejs
+        resources: {}
+status: {}
